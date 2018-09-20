@@ -1,0 +1,32 @@
+.window{
+	width: 300px;
+	height:200px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.images{
+	position: relative;
+	display: flex;
+}
+
+img{
+	width: 100%;
+	transition: all 0.3s;
+	position: absolute;
+	top: 0;
+}
+
+img.leave{
+	transform:translateX(-100%); 
+	z-index: 1;
+}
+
+img.current{
+	transform: translateX(0%);
+	z-index: 1;
+}
+
+img.standby{
+	transform:translateX(100%); 
+}
